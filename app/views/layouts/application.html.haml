@@ -3,20 +3,13 @@
   %head
     %title= title
     = csrf_meta_tag
-    = stylesheet_link_tag 'blueprint/screen', :media => 'screen'
-    = stylesheet_link_tag 'blueprint/print', :media => 'print'
-    = stylesheet_link_tag 'custom', :media => 'screen'
+    = render 'layouts/stylesheets'
   %body
     .container
-      %header
-        = image_tag("logo.png", :alt => "Sample App", :class => "round")
-        %nav.round
-          %ul
-            %li= link_to "Home", '#'
-            %li= link_to "Help", '#'
-            %li= link_to "Sign In", '#'
+      = render 'layouts/header'
       %section.round
         = yield
+      = render 'layouts/footer'
 
 
 

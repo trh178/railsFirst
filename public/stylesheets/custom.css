@@ -6,19 +6,17 @@ body {
 
 header {
   padding-top: 20px; }
-
-header img {
-  padding: 1em;
-  background: #fff; }
+  header img {
+    padding: 1em;
+    background: #fff; }
 
 section {
   margin-top: 1em;
   font-size: 120%;
   padding: 20px;
   background: #fff; }
-
-section h1 {
-  font-size: 200%; }
+  section h1 {
+    font-size: 200%; }
 
 /* links */
 a {
@@ -71,3 +69,14 @@ a.signup_button {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px; }
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto; }
+
+footer nav {
+  float: none; }
